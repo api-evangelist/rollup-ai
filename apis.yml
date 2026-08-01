@@ -1,22 +1,78 @@
 aid: rollup-ai
 name: Rollup AI
-description: Rollup AI is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rollup is a browser-based, real-time collaboration platform for engineering
+  teams building complex hardware. It supports the full hardware development
+  lifecycle across modular tools for systems engineering, systems modeling,
+  requirements management, technical documentation, CAD viewing, and design
+  reviews, with modules that interlink so changes propagate across a project.
+  Rollup markets first-class APIs and developer-friendly features so teams can
+  integrate it into new and existing systems; the platform exposes a REST API
+  (authenticated with API keys or OAuth tokens) with pagination and websockets.
+  Rollup serves early-stage hardware companies from small satellite builders to
+  robotics firms, and offers Self-hosted and GovCloud options for ITAR/EAR
+  export-controlled data. The company is backed by Andreessen Horowitz (a16z)
+  and Thiel Capital ($5.6M seed) and was surfaced in the API Evangelist network
+  as an a16z portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/rollup-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
+- Thiel Capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Hardware Engineering
+- Systems Engineering
+- Requirements Management
+- Product Lifecycle Management
+- Collaboration
+- CAD
+- Aerospace
+- Robotics
+- Developer Tools
+image: https://rollup.ai/favicon.ico
+apis:
+- name: Rollup API
+  description: >-
+    Rollup's REST API for programmatic access to the hardware engineering
+    collaboration platform. Authenticated with API keys or OAuth tokens;
+    supports pagination and websockets. The API host resolves to a
+    Railway-hosted service; discovery endpoints (OpenAPI, well-known) are not
+    publicly exposed and require authentication.
+  humanURL: https://rollup.ai/
+  baseURL: https://api.rollup.ai
+  properties: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+common:
+- type: Website
+  url: https://rollup.ai/
+- type: Blog
+  url: https://rollup.ai/blog
+- type: DomainSecurity
+  url: security/rollup-ai-domain-security.yml

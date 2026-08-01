@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: rollup.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 24 03:32:05 2026 GMT
+  hsts: null
+- host: api.rollup.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 26 16:28:42 2026 GMT
+  hsts: null
+domains:
+- domain: rollup.ai
+  dnssec: false
+  caa:
+  - 0 issue "digicert.com; cansignhttpexchanges=yes"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog; cansignhttpexchanges=yes"
+  - 0 issue "ssl.com"
+  - 0 issuewild "comodoca.com"
+  - 0 issuewild "digicert.com; cansignhttpexchanges=yes"
+  spf: false
+  dmarc: false
